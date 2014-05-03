@@ -1,6 +1,7 @@
 Flow protocal
 ===
-
+Every thing is JSON!
+The protocol is constanted of two parts,one is length of the json string,the other is json string.
 
 signalType define:
 
