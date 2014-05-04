@@ -163,7 +163,7 @@ req:
         "signalType":4 // this indicate that the req or res is a relay signal. server should send data field to the peerAccount
       },
       "body":{
-        "data":{"myAccount":"liuyang", "peerAccount":"appleseedez", "bizType":4096, "endMode":1|2|3},
+        "nego":{"myAccount":"liuyang", "peerAccount":"appleseedez", "bizType":4096, "endMode":1|2|3},
         "peerAccount":"appleseedez",
         "myAccount":"liuyang"
       }
