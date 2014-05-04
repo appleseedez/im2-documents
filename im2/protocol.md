@@ -47,6 +47,7 @@ req:
       "head":{
         "signalType":digitNumber, // predefined type number
         "status":0|-1,// 0:normal,-1:abnormal
+        "seq":digitNumber // auto increase 
         "sessionToken":"32bit sequence"// whether client is login. if this is empty, server need to find password in the body section.
       },
       "body":{
@@ -128,7 +129,7 @@ req:
         "signalType":4 // this indicate that the req or res is a relay signal. server should send data field to the peerAccount
       },
       "body":{
-        "data":{"peerAccount":"appleseedez", "peerSessionID":112, "peerInterIP":"10.0.0.1", "peerInterPort":1234, "peerLocalIP":"10.0.0.2", "peerLocalPort":3425, "myAccount":"liuyang", "mySessionID":113,"bizType":1024},
+        "nego":{"peerAccount":"appleseedez", "peerSessionID":112, "peerInterIP":"10.0.0.1", "peerInterPort":1234, "peerLocalIP":"10.0.0.2", "peerLocalPort":3425, "myAccount":"liuyang", "mySessionID":113,"bizType":1024},
         "peerAccount":"liuyang",
         "myAccount":"appleseedez"
       }
@@ -143,7 +144,7 @@ res:
         "signalType":4 // this indicate that the req or res is a relay signal. server should send data field to the peerAccount
       },
       "body":{
-        "data":{"peerAccount":"liuyang", "peerSessionID":112, "peerInterIP":"10.0.0.1", "peerInterPort":1234, "peerLocalIP":"10.0.0.2", "peerLocalPort":3425, "myAccount":"liuyang", "mySessionID":113,"bizType":2048},
+        "nego":{"peerAccount":"liuyang", "peerSessionID":112, "peerInterIP":"10.0.0.1", "peerInterPort":1234, "peerLocalIP":"10.0.0.2", "peerLocalPort":3425, "myAccount":"liuyang", "mySessionID":113,"bizType":2048},
         "peerAccount":"appleseedez",
         "myAccount":"liuyang"
       }
