@@ -25,6 +25,7 @@ head format:
     "head":{
       "signalType":digitNumber, // predefined type number
       "status":0|-1,// 0:normal,-1:abnormal
+      "seq":digitNumber // auto increase by client
       "sessionToken":"32bit sequence"// whether client is login. if this is empty, server need to find password in the body section.
     }
 
